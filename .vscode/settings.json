@@ -1,0 +1,6 @@
+{
+  "git.enabled": true,
+  "git.ignoreLegacyWarning": true,
+  "git.autofetch": false,
+  "git.ignoreLimitWarning": true
+}

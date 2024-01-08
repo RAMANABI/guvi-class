@@ -1,0 +1,12 @@
+#quotes{
+     overflow:auto;
+     border: 1px solid grey;
+     padding: 5px;
+     height: 100px;
+}
+
+.list{
+     background-color: lightsalmon;
+     border: 1px black;
+     padding: 2px;
+}

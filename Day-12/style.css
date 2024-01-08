@@ -1,0 +1,8 @@
+body{
+    color: brown;
+    border: 4px solid black
+}
+button{
+    color:inherit;
+    border: inherit;
+}

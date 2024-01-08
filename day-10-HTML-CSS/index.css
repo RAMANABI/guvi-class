@@ -1,0 +1,37 @@
+button{
+    background-color: aqua;
+    margin:10px;
+}
+button:hover{
+    background-color: lightsalmon;
+    margin:10px solid red;
+    padding:10px;
+    border:10px;
+    
+}
+
+
+span{
+    display:block;
+    margin:10px;
+    border:2px dotted lightseagreen;
+    padding:5px ;
+}
+
+span:nth-child(odd){
+    background-color: lightslategray;
+}
+
+span:active{
+    background-color: lightgreen;
+}
+p::first-line{
+    font-style: italic;
+    
+}
+div::before{
+    content:"EXAMPLE";
+    color: brown;
+  
+    
+}

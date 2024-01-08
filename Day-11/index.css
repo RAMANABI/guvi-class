@@ -1,0 +1,30 @@
+section{
+    border: 2px solid black;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    
+
+}
+.CSE{
+    border: 2px solid black;
+    height: 10vh;
+    background-color: lightblue;
+}
+.ME{
+    border: 2px solid black;
+    height: 10vh;
+    background-color: lightgray;
+}
+.EEE{
+    border: 2px solid black;
+    height: 10vh;
+    background-color: lightsalmon;
+}
+div{
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: italic;
+}

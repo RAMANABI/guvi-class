@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+          var request=new XMLHttpRequest();
+request.open('GET','https://restcountries.com/v3.1/all');
+request.send();
+request.onload=function (){
+    var countryData=JSON.parse(this.response);
+    const asia=countryData.filter((a)=>{
+        if(a.region==='Asia'){
+            return a.name;
+        }
+    })
+    console.log(asia);}
+
+    var request=new XMLHttpRequest();
+request.open('GET','https://restcountries.com/v3.1/all');
+request.send();
+request.onload=function (){
+    var countryData=JSON.parse(this.response);
+    const populate=countryData.filter((element)=>{
+         return element.populate<200000;
+        })
+    
+    console.log(populate);}
+
+    var request=new XMLHttpRequest();
+request.open('GET','https://restcountries.com/v3.1/all');
+request.send();
+request.onload=function (){
+    var countryData=JSON.parse(this.response);
+ countryData.forEach((element)=>{
+        console.log(element.name,element.capital,element.flag);
+    })}
+
+   var request=new XMLHttpRequest();
+request.open('GET','https://restcountries.com/v3.1/all');
+request.send();
+request.onload=function (){
+    var countryData=JSON.parse(this.response);
+    const population=countryData.reduce((acc,element)=>{
+        return acc+element.population;
+    })
+    console.log(population);}
+  
+ request.onlaod=function(){
+    var countryData=JSON.parse(this.response);
+   const currency=countyData.filter((element) => {
+    for(let key in element.currencies){
+        if(element.currencies[key].code === "USD"){
+
+            return element;
+        }
+    }
+    
+   })
+    
+     console.log("currency");
+}
+
+    </script>
+</body>
+</html>
